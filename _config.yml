@@ -1,7 +1,8 @@
+gems: [jekyll-paginate]
 excerpt_separator: ""
-pygments: true
+highlighter: rouge
 markdown: kramdown
-url: http://isanosyan.github.io
+url: http://awesomeroots.github.io
 title: Awesome Roots
 tagline: development team blog
 description: My awesome new site
