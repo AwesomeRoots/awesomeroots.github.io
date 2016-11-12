@@ -7,7 +7,7 @@ Just solved a tricky thing: imagine you have a page of two blocks. First block c
 
 Sounds tricky? Just check the block below and click "expand". Use "reset" to reset the example.
 
-<iframe width="100%" height="160" frameborder ="no" src="http://workisfun.net/content/blog/smooth-scroll/1.html"></iframe>
+<iframe width="100%" height="160" frameborder ="no" src="/public/frames/2013-05-02-shaking-blocks-and-scrolling-of-resizing-content/1.html"></iframe>
 
 You see this ugly shaking blue box when it's scrolling? That's the issue.
 
@@ -45,7 +45,7 @@ FixableBlock = function (o) {
 
 Let's apply FixableBlock class on the blue box and see what happens.
 
-<iframe width="100%" height="160" frameborder ="no" src="http://workisfun.net/content/blog/smooth-scroll/2.html"></iframe>
+<iframe width="100%" height="160" frameborder ="no" src="/public/frames/2013-05-02-shaking-blocks-and-scrolling-of-resizing-content/2.html"></iframe>
 
 Hmmm... Oh yes, it's fixed. We should explicitely preserve dimensions of the blue box, or it collapses.
 
@@ -129,6 +129,6 @@ FixableBlock = function (o) {
 };
 ```
 
-<iframe width="100%" height="160" frameborder ="no" src="http://workisfun.net/content/blog/smooth-scroll/4.html"></iframe>
+<iframe width="100%" height="160" frameborder ="no" src="/public/frames/2013-05-02-shaking-blocks-and-scrolling-of-resizing-content/4.html"></iframe>
 
 That's it. Of course, the solution can (and should) be tweaked: for example, this simple thing will be buggy if initially window is higher than two blocks. Just tune it for your page.

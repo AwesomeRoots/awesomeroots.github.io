@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            div { margin-bottom: 10px; font: 10pt sans-serif; }
+            a { text-decoration: none; border-bottom: 1px dashed; }
+
+            .all { padding: 0 150px; }
+
+            .b { padding: 20px; }
+
+            .top { background-color: #ffc240; height: 90px; }
+            .top a { color: #6d48d7; }
+            .bottom { background-color: #476dd5; height: 120px; }
+            .bottom a { color: #ffe040; }
+        </style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var initialTopBlockHeight = $('.top').outerHeight();
+
+                $('.expand').on({
+                    click: function () {
+                        var bodyScrollTop = $('body').scrollTop();
+
+                        $('.top').animate({
+                            height: 1000
+                        }, {
+                            duration: 5000,
+                            step: function (now) {
+                                $(window).scrollTop(bodyScrollTop + now - initialTopBlockHeight)
+                            }
+                        });
+
+                        return false;
+                    }
+                });
+                $('.reset').on({
+                    click: function () {
+                        $('.top').css({
+                            height: initialTopBlockHeight,
+                        });
+                        $(window).scrollTop(0);
+
+                        return false;
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="all">
+            <div class="top"><div class="b">
+                <a href="#" class="expand">expand</a>
+            </div></div>
+            <div class="bottom"><div class="b"><a href="#" class="reset">reset</a></div></div>
+        </div>
+    </body>
+</html>
