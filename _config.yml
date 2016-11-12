@@ -1,0 +1,8 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://isanosyan.github.io
+title: Awesome Roots
+tagline: development team blog
+description: My awesome new site
+paginate: 5
