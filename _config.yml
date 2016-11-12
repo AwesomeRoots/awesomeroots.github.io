@@ -5,5 +5,5 @@ markdown: kramdown
 url: http://awesomeroots.github.io
 title: Awesome Roots
 tagline: development team blog
-description: My awesome new site
+description:
 paginate: 5
