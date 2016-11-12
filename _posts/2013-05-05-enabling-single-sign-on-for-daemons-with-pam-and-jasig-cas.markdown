@@ -2,6 +2,7 @@
 published: true
 title: Enabling Single Sign On for daemons with PAM and Jasig CAS
 layout: post
+tags: [c, devops, cas]
 ---
 Jasig CAS is a great service for single sign on. Basically it is a Java application that, once deployed, provides a single authentication mechanism for all your web services. Thus, if you're developing a multicomponent portal, which consists of several sites — CAS is a great solution.
 

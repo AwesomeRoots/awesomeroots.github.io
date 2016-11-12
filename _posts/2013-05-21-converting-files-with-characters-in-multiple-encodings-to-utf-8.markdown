@@ -2,6 +2,7 @@
 published: true
 title: Converting files with characters in multiple encodings to utf-8
 layout: post
+tags: [python, dev]
 ---
 
 It's easy to convert a `windows-1252` file into a `utf-8` one, right? Use `iconv`, `enca` or any other tool of your choice and you're done. Even if you have thousands of such files, you can easily automate things using Bash, OS X Automator or anything else.

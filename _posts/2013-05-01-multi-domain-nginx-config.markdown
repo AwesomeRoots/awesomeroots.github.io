@@ -2,6 +2,7 @@
 published: true
 title: Multi-domain nginx config
 layout: post
+tags: [nginx, php, devops, dev]
 ---
 Okay, so we use nginx all the way here.
 

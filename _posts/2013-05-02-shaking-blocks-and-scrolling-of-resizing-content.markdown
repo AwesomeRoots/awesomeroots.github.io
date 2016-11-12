@@ -2,6 +2,7 @@
 published: true
 title: Shaking blocks and scrolling of resizing content
 layout: post
+tags: [javascript, animation, dev]
 ---
 Just solved a tricky thing: imagine you have a page of two blocks. First block can grow its height on click, but you wish the second block's top line to stay at its place. Hence, all the page should scroll down to keep the block on its place.
 
